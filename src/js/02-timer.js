@@ -26,10 +26,10 @@ const options = {
 let selectedDate = null;
 
 options.onClose = function(selectedDates) {
-  selectedDate = selectedDates[0];
-  if (selectedDate < currentDate) {
+  if (selectedDates[0] < currentDate) {
     Notiflix.Notify.failure('Please choose a date in the future');
   } else {
+    selectedDate = selectedDates[0];
     refs.startBtn.removeAttribute('disabled');
   }
 };
