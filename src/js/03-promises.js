@@ -1,8 +1,7 @@
 import Notiflix from 'notiflix';
 
 const form = document.querySelector('.form');
-let position = 0;
-let formDatadelay = 0;
+let delay = 0;
 let step = 0;
 form.addEventListener('submit', onFormSubmit);
 
